@@ -28,6 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <script type="application/ld+json">
 {
@@ -98,6 +99,12 @@
         </ul>
 
         <a href="#contact" class="nav-btn">Let's Talk</a>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 </header>
 
@@ -234,18 +241,66 @@ technology solutions for modern businesses.
 <div class="grid">
 
 <div class="card">
-<h3>Hotel Reservation Platform</h3>
-<p>Complete online booking ecosystem.</p>
+    <span class="project-tag">Travel & Booking</span>
+    <h3>Hotel Reservation Platform</h3>
+    <p>Complete online booking ecosystem with real-time room availability and channel manager integration.</p>
+    <div class="project-tech">React · Node.js · MongoDB</div>
 </div>
 
 <div class="card">
-<h3>E-Commerce Marketplace</h3>
-<p>Scalable multi-vendor commerce platform.</p>
+    <span class="project-tag">E-Commerce</span>
+    <h3>E-Commerce Marketplace</h3>
+    <p>Scalable multi-vendor commerce platform featuring advanced faceted search and high-throughput inventory management.</p>
+    <div class="project-tech">Angular · Express · PostgreSQL</div>
 </div>
 
 <div class="card">
-<h3>Airport Parking Solution</h3>
-<p>Smart reservation and management system.</p>
+    <span class="project-tag">Smart City</span>
+    <h3>Airport Parking Solution</h3>
+    <p>Automated reservation ledger integrated with real-time ANPR (automatic number plate recognition) camera entry gates.</p>
+    <div class="project-tech">Java · Spring Boot · AWS</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">Artificial Intelligence</span>
+    <h3>AI Logistics Platform</h3>
+    <p>Intelligent route optimization and real-time tracking dashboard utilizing automated machine learning models.</p>
+    <div class="project-tech">Python · TensorFlow · FastAPI</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">Fintech</span>
+    <h3>Payment Gateway API</h3>
+    <p>Highly secure, multi-currency transactional ledger system compliant with PCI-DSS Level 1 standards.</p>
+    <div class="project-tech">Go · Docker · PostgreSQL</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">Healthcare</span>
+    <h3>Telehealth Mobile App</h3>
+    <p>HIPAA-compliant, cross-platform consulting app featuring peer-to-peer encrypted video and appointment booking.</p>
+    <div class="project-tech">React Native · WebRTC · Node.js</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">Internet of Things</span>
+    <h3>Smart Grid IoT Dashboard</h3>
+    <p>Real-time telemetry, automated anomaly detection, and predictive maintenance charts for municipal electrical grids.</p>
+    <div class="project-tech">Node.js · MQTT · InfluxDB</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">SaaS / B2B</span>
+    <h3>Enterprise CRM Platform</h3>
+    <p>Customer relationship manager featuring customizable kanban pipelines, automated reports, and email campaign triggers.</p>
+    <div class="project-tech">Vue.js · Django · Redis</div>
+</div>
+
+<div class="card">
+    <span class="project-tag">EdTech</span>
+    <h3>Interactive LMS Platform</h3>
+    <p>Online course hosting platform with native video streaming, automated grading quizzes, and digital credential issuing.</p>
+    <div class="project-tech">Ruby on Rails · React · PostgreSQL</div>
 </div>
 
 </div>
@@ -286,8 +341,27 @@ Send Message
 </form>
 
 <div class="contact-info">
-<p>Email: info@myfivegroup.com</p>
-<p>Phone: +1 (555) 723-4874</p>
+    <div class="contact-item">
+        <span class="contact-icon" aria-hidden="true">📍</span>
+        <div>
+            <strong>Headquarters:</strong>
+            <p>101 Hudson Street, Suite 2100<br>Jersey City, NJ 07302</p>
+        </div>
+    </div>
+    <div class="contact-item">
+        <span class="contact-icon" aria-hidden="true">✉️</span>
+        <div>
+            <strong>Email Us:</strong>
+            <p><a href="mailto:info@myfivegroup.com">info@myfivegroup.com</a></p>
+        </div>
+    </div>
+    <div class="contact-item">
+        <span class="contact-icon" aria-hidden="true">📞</span>
+        <div>
+            <strong>Call Us:</strong>
+            <p><a href="tel:+15557234874">+1 (555) 723-4874</a></p>
+        </div>
+    </div>
 </div>
 
 </section>
@@ -295,17 +369,41 @@ Send Message
 </main>
 
 <footer>
-
-<h3>My Five Group</h3>
-
-<p>
-Transforming Ideas Into Digital Solutions
-</p>
-
-<p>
-© 2026 My Five Group. All Rights Reserved.
-</p>
-
+    <div class="footer-grid">
+        <div class="footer-col">
+            <a href="#" class="logo">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="lgGradFooter" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#00D4FF"/>
+                            <stop offset="100%" stop-color="#7B61FF"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="22,3 41,15.5 34,37 10,37 3,15.5" fill="url(#lgGradFooter)"/>
+                    <text x="22" y="29" text-anchor="middle" fill="white" font-size="17" font-weight="800" font-family="Inter,sans-serif" letter-spacing="-1">M</text>
+                </svg>
+                <span class="logo-text"><span class="logo-my">My</span> Five <span class="logo-group">Group</span></span>
+            </a>
+            <p class="footer-tagline">Transforming Ideas Into Scalable Digital Solutions.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tech">Technologies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Address</h4>
+            <p>101 Hudson Street, Suite 2100<br>Jersey City, NJ 07302</p>
+            <p style="margin-top: 10px;">Email: <a href="mailto:info@myfivegroup.com">info@myfivegroup.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 My Five Group. All Rights Reserved.</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
