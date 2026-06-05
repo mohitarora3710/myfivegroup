@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | Five Group</title>
+<meta name="description" content="Join the team at Five Group. Explore open engineering, design, and simulation roles and apply today.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="logo-primary.webp" alt="Five Group Logo" style="height: 40px; width: auto; max-width: 150px; object-fit: contain;">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="https://www.linkedin.com/company/five-group-me/" class="nav-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="contact.html" class="nav-btn">Let's Talk</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+    <section class="page-header">
+        <h1>Join <span>Our Team</span></h1>
+        <p class="section-desc">Help us build scalable custom software, intelligent AI models, and immersive simulations. We're always seeking talented minds.</p>
+        <div class="breadcrumbs" style="margin-top: 15px;">
+            <a href="index.html">Home</a> &gt; Careers
+        </div>
+    </section>
+
+    <section style="padding: 80px 10%;">
+        <div class="careers-grid">
+            <!-- Left: Open Positions -->
+            <div class="jobs-list">
+                <h2 style="font-size: 28px; margin-bottom: 20px;">Current Openings</h2>
+                
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>Senior Full-Stack Developer</h3>
+                        <div class="job-meta">
+                            <span>📍 Podgorica, Montenegro / Remote</span>
+                            <span>💼 Full-Time</span>
+                            <span>💰 Competitive</span>
+                        </div>
+                    </div>
+                    <a href="#apply" class="job-apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>AI &amp; Autonomous Systems Developer</h3>
+                        <div class="job-meta">
+                            <span>📍 Podgorica, Montenegro / Remote</span>
+                            <span>💼 Full-Time</span>
+                            <span>💰 Competitive</span>
+                        </div>
+                    </div>
+                    <a href="#apply" class="job-apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>Unity/Unreal Simulator Engineer</h3>
+                        <div class="job-meta">
+                            <span>📍 Podgorica, Montenegro / Remote</span>
+                            <span>💼 Full-Time</span>
+                            <span>💰 Competitive</span>
+                        </div>
+                    </div>
+                    <a href="#apply" class="job-apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Right: Culture -->
+            <div class="culture-card">
+                <h3>Our Culture</h3>
+                <p>At Five Group, we foster a culture of research, collaboration, and high-quality engineering. Here is what we offer:</p>
+                <ul class="culture-features">
+                    <li>Flexible hybrid &amp; remote options</li>
+                    <li>Premium health and life insurance</li>
+                    <li>Paid learning certifications &amp; conferences</li>
+                    <li>State-of-the-art work equipment</li>
+                    <li>Collaborative mentorship environment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="apply" style="padding: 80px 10%; background: rgba(255, 255, 255, 0.01); border-top: 1px solid rgba(255,255,255,0.03);">
+        <h2 class="section-title">Apply For An Opening</h2>
+        <p class="section-desc">Submit your resume and details. We review every profile carefully.</p>
+        
+        <form id="careerForm" aria-label="Apply to My Five Group">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Full Name" aria-label="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+            </div>
+            
+            <div class="form-row">
+                <input type="url" name="linkedin" placeholder="LinkedIn Profile Link (Required)" aria-label="LinkedIn Profile Link" required>
+                <select name="role" aria-label="Select Position" required>
+                    <option value="" disabled selected>Select Position</option>
+                    <option value="Senior Full-Stack Developer">Senior Full-Stack Developer</option>
+                    <option value="AI & Autonomous Systems Developer">AI &amp; Autonomous Systems Developer</option>
+                    <option value="Unity/Unreal Simulator Engineer">Unity/Unreal Simulator Engineer</option>
+                </select>
+            </div>
+            
+            <textarea name="message" rows="5" placeholder="Tell us about your technical background and why you want to join us..." aria-label="Message"></textarea>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <a href="index.html" class="logo">
+                <img src="logo-white.png" alt="Five Group Logo" style="height: 36px; width: auto; max-width: 130px; object-fit: contain;">
+            </a>
+            <p class="footer-tagline">We specialize in perfecting your ideas and bringing them to life.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/company/five-group-me/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Address</h4>
+            <p>Bulevar Knjaza Danila Petrovića 13/32<br>81000 Podgorica, Montenegro</p>
+            <p style="margin-top: 10px;">Email: <a href="mailto:contact@myfivegroup.com">contact@myfivegroup.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Five Group. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
