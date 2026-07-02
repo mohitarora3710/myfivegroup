@@ -1019,14 +1019,89 @@ gap: 30px;
   grid-template-columns: 1fr;
 }
 
-.job-card {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
 .job-apply-btn {
   width: 100%;
   text-align: center;
 }
+}
+
+/* Partners Section */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.partner-logo-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.partner-logo-card:hover {
+  border-color: rgba(0, 212, 255, 0.2);
+  transform: translateY(-5px);
+  background: rgba(0, 212, 255, 0.02);
+}
+
+.partner-logo-card h4 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.partner-logo-card p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* Custom Leadership Card */
+.leader-card-premium {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 30px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: 800px;
+  margin: 40px auto 0;
+  transition: all 0.3s ease;
+}
+
+.leader-card-premium:hover {
+  border-color: rgba(0, 212, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.leader-avatar-premium {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00D4FF, #7B61FF);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .leader-card-premium {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
 }
