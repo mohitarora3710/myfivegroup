@@ -43,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const currentPath = window.location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll(".nav-links a").forEach(link => {
   const href = link.getAttribute("href");
-  if (href === currentPath || (currentPath === "index.html" && href === "./")) {
+  if (href === currentPath || (currentPath === "index.html" && (href === "/" || href === "./" || href === "index.html"))) {
     link.style.color = "#00D4FF";
     link.style.fontWeight = "600";
     link.classList.add("active-nav");
